@@ -60,10 +60,9 @@ if (path) {
     window.history.replaceState(null, '', `/${basePath}/`); 
 }
 
-const container = document.getElementById('card-container');
 const selectedElves = JSON.parse(localStorage.getItem('elves') || '[]');
-container.innerHTML = `<h1>Welcome to the Elf App</h1>`;
 if (selectedElves) {
+    const container = document.getElementById('card-container');
     for (let selectedElf of selectedElves) {
         const data = elves[selectedElf];
         if (data) container.innerHTML += `<div class="card"><h1>${data.name}</h1><p>${data.desc}</p></div>`;
