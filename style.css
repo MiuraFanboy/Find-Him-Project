@@ -1,0 +1,10 @@
+.title {
+    text-align: center;
+}
+
+#card-container {
+    margin-left: 25vw;
+    display: flex;
+    width: 50vw;
+    border: 2px black solid;
+}
