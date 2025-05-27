@@ -1,10 +1,21 @@
+body {
+    margin: 0;
+}
+
 .title {
     text-align: center;
 }
 
 #card-container {
-    margin-left: 25vw;
+    margin-left: 5vw;
     display: flex;
-    width: 50vw;
+    flex-wrap: wrap;
+    width: 90vw;
     border: 2px black solid;
+}
+
+.card {
+    border: 1px solid red;
+    flex: 25%;
+    margin: 2.5%;
 }
